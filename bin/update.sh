@@ -11,12 +11,12 @@ cd web
 rm -r blockly-games
 rm -r downloads
 
-mkdir blockly-games
-mkdir downloads
+mkdir -p blockly-games
+mkdir -p downloads
 
 for zip_file in ../blockly-games/generated/*.zip
 do
-  ln -s -t downloads/ $zip_file 
+  ln -s -t downloads "`realpath \"$zip_file\"`" 
   echo extracting $zip_file
   unzip $zip_file >> /dev/null
   rm -f blockly-games/index.html
