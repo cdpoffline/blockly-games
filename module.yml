@@ -1,5 +1,7 @@
 overview:
-  image: overview.jpg
-  name: Blockly-Spiele
-  text: Blockly führt spielerisch ans Programmieren heran. Es wird keine Vorerfahrung benötigt.
-  category: blocks
+  blocks:
+    blockly-games:
+#      image: overview.jpg
+      name: Blockly-Spiele
+      text: Blockly führt spielerisch ans Programmieren heran. Es wird keine Vorerfahrung benötigt.
+      module: blockly-games
