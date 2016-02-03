@@ -3,13 +3,21 @@
 cd "`dirname $0`"
 
 cd ..
-git submodule update
+
+if [ -d blockly-games ]
+then
+  cd blockly-games
+  git pull
+  cd ..
+else
+  git clone --depth=1 --branch=offline https://github.com/google/blockly-games.git
+fi
 
 mkdir -p web
 cd web
 
-rm -r blockly-games
-rm -r downloads
+rm -rf blockly-games
+rm -rf downloads
 
 mkdir -p blockly-games
 mkdir -p downloads

@@ -6,7 +6,6 @@ sudo apt-get -y -q install unzip git realpath
 
 cd ..
 
-git submodule init
 
 
 
