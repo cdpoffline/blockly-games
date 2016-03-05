@@ -4,7 +4,7 @@ cd "`dirname $0`"
 
 cd ..
 
-if [ -d blockly-games ]
+if [ -d blockly-games/.git ]
 then
   cd blockly-games
   git pull
