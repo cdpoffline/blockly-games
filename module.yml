@@ -9,3 +9,6 @@ overview:
         en-en: Blockly Games is a playful introduction to programming. No experience needed.
         de-de: Blockly führt spielerisch ans Programmieren heran. Es wird keine Vorerfahrung benötigt.
       module: blockly-games
+      start:
+        en-en: index.html
+        de-de: index-de.html
